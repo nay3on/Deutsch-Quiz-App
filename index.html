@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="source/quiz-logo-1.png" alt="home-logo"/></a></div>
+        <div class="menu-button" id="menuButton" onclick="toggleMenu()">
+            <img src="source/menu-open-button.png" alt="menu-button">
+        </div>
+    </div>
+    <div class="main">
+        <div class="speech-bubble bubble-top" id="bubbleTop">Willkommen, User!&nbsp; Wählen Sie die richtige Antwort📝</div>
+        <div class="speech-bubble bubble-bottom" id="bubbleBottom">알맞은 단어를 고르세요</div>
+        <button class="submit-button" id="submitButton">제출</button>
+        <button class="restart-button" id="restartButton">다시 시작</button>
+
+        <div class="menu" id="menu">
+            <div class="profile-container">
+                <div class="circle menu-circle" id="menuProfile"><img src="source/profile-icon.png" alt="profile-image"></div>
+                <div class="nickname-box" id="nicknameDisplay">User</div>
+            </div>
+            <div class="menu-items-container">
+                <div class="menu-item" onclick="toggleSubMenu('subMenu1')">Thema 🗂️</div>
+                <div class="sub-menu" id="subMenu1">
+                    <div class="sub-menu-item" id="sub-menu-theme-fruit">Obst 🍎</div>
+                    <div class="sub-menu-item" id="sub-menu-theme-vegetable">Gemüse 🥬</div>
+                    <div class="sub-menu-item">Tier🐱</div>
+                    <div class="sub-menu-item">4🎨</div>
+                    <div class="sub-menu-item">5🏠</div>
+                    <div class="sub-menu-item">6🧑🏻‍🏫</div>
+                    <div class="sub-menu-item">7😆</div>
+                </div>
+                <div class="menu-item" id="menu2">Statistiken 🎯</div>
+                <div class="menu-item" id="menu3">Einstellungen ⚙️</div>
+                <div class="menu-item" id="menu4">Über mich 👩🏻‍💻</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="source/one.png" alt="1">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <div class="image-box"></div>
+                                <div class="text-box"></div>
+                                <div class="button-box">
+                                    <button class="choice-button"><div class="choice-num">1</div><div class="choice-word">a</div></button>
+                                    <button class="choice-button"><div class="choice-num">2</div><div class="choice-word">b</div></button>
+                                    <button class="choice-button"><div class="choice-num">3</div><div class="choice-word">c</div></button>
+                                    <button class="choice-button"><div class="choice-num">4</div><div class="choice-word">d</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="source/two.png" alt="2">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <div class="image-box"></div>
+                                <div class="text-box"></div>
+                                <div class="button-box">
+                                    <button class="choice-button"><div class="choice-num">1</div><div class="choice-word">a</div></button>
+                                    <button class="choice-button"><div class="choice-num">2</div><div class="choice-word">b</div></button>
+                                    <button class="choice-button"><div class="choice-num">3</div><div class="choice-word">c</div></button>
+                                    <button class="choice-button"><div class="choice-num">4</div><div class="choice-word">d</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="source/three.png" alt="3">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <div class="image-box"></div>
+                                <div class="text-box"></div>
+                                <div class="button-box">
+                                    <button class="choice-button"><div class="choice-num">1</div><div class="choice-word">a</div></button>
+                                    <button class="choice-button"><div class="choice-num">2</div><div class="choice-word">b</div></button>
+                                    <button class="choice-button"><div class="choice-num">3</div><div class="choice-word">c</div></button>
+                                    <button class="choice-button"><div class="choice-num">4</div><div class="choice-word">d</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="source/four.png" alt="4">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <div class="image-box"></div>
+                                <div class="text-box"></div>
+                                <div class="button-box">
+                                    <button class="choice-button"><div class="choice-num">1</div><div class="choice-word">a</div></button>
+                                    <button class="choice-button"><div class="choice-num">2</div><div class="choice-word">b</div></button>
+                                    <button class="choice-button"><div class="choice-num">3</div><div class="choice-word">c</div></button>
+                                    <button class="choice-button"><div class="choice-num">4</div><div class="choice-word">d</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="source/five.png" alt="5">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <div class="image-box"></div>
+                                <div class="text-box"></div>
+                                <div class="button-box">
+                                    <button class="choice-button"><div class="choice-num">1</div><div class="choice-word">a</div></button>
+                                    <button class="choice-button"><div class="choice-num">2</div><div class="choice-word">b</div></button>
+                                    <button class="choice-button"><div class="choice-num">3</div><div class="choice-word">c</div></button>
+                                    <button class="choice-button"><div class="choice-num">4</div><div class="choice-word">d</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-text">Nayeon&nbsp;|&nbsp;</span>
+            <div class="footer-link"><a href="https://github.com/nay3on" target="_blank">GitHub</a></div>
+            <span class="footer-text">&nbsp;|&nbsp;</span>
+            <div class="footer-link"><a href="https://velog.io/@nayeon0425" target="_blank">Velog</a></div>
+        </div>
+    </footer>
+
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Hallo!👋🏻</h2>
+            <div class="profile-image-placeholder" id="profileImagePlaceholder">
+                <img src="source/profile-icon.png" alt="Upload Profile Image" id="profileUploadIcon">
+            </div>
+            <form id="profileForm">
+                <input type="file" id="profileImageInput" accept="image/*" style="display:none;">
+                <input type="text" id="nicknameInput" placeholder="닉네임을 입력하세요" required>
+                <button id="startButton" type="submit">시작</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="settingsModal" class="modal">
+        <div class="modal-content settings-content">
+            <span class="close" onclick="closeSettingsModal()">&times;</span>
+            <h2>Einstellungen ⚙️</h2>
+            <div class="settings-nickname">
+                닉네임: <input type="text" id="settingsNicknameInput" placeholder="닉네임을 입력하세요" required>
+            </div>
+            <div class="settings-backgroundMusic">
+                배경음악 볼륨: <input type="range" id="volumeControl" min="0" max="1" step="0.01">
+            </div>
+            <div class="settings-buttons">
+                <button id="resetLeaderboardButton">기록 초기화</button>
+                <button class="settings-save-button" onclick="saveSettings()">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="statsModal" class="modal">
+        <div class="modal-content stats-content">
+            <span class="close" onclick="closeStatsModal()">&times;</span>
+            <h2>Leaderboard 🏆</h2>
+            <div class="leaderboard" id="leaderboard">
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutModal" class="modal" lang="ko">
+        <div class="modal-content about-content">
+            <span class="close" onclick="closeAboutModal()">&times;</span>
+            <div class="about-profile-area">
+                <div class="about-profile-img">
+                    <img src="source/about-profile-pic.png">
+                </div>
+                <div class="info">
+                    <span>김나연</span><hr>
+                    <button id="button1">관광경영학과</button>
+                    <button id="button2">컴퓨터소프트웨어공학과</button>
+                    <button id="button3">3학년</button><br>
+                    <a href="https://github.com/nay3on" target="_blank"><button id="button4">GitHub</button></a>
+                    <a href="https://velog.io/@nayeon0425" target="_blank"><button id="button5">Velog</button></a>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <audio id="backgroundMusic" loop>
+        <source src="source/background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
