@@ -53,8 +53,8 @@ function changeMenuItemText() {
             case 'Thema 🗂️':
                 hoverText = '주제 🗂️';
                 break;
-            case 'Statistiken 🎯':
-                hoverText = '통계 🎯';
+            case 'Rangliste 🏆':
+                hoverText = '랭킹 🏆';
                 break;
             case 'Einstellungen ⚙️':
                 hoverText = '설정 ⚙️';
