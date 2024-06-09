@@ -638,7 +638,7 @@ function populateLeaderboard() {
         else if (index === 1) medal = '🥈';
         else if (index === 2) medal = '🥉';
 
-        listItem.textContent = `[${index + 1}] ${nickname} ${medal}: ${score} points`;
+        listItem.textContent = `[${index + 1}] ${nickname}${medal}: ${score} points`;
         leaderboard.appendChild(listItem);
     });
 }
