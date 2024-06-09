@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var menu4 = document.getElementById('menu4');
     var menu3 = document.getElementById('menu3');
     var settingsModal = document.getElementById('settingsModal');
-    var statsModal = document.getElementById('statsModal');
+    var rankingModal = document.getElementById('rankingModal');
     var menu2 = document.getElementById('menu2');
     var initialSettings = { nickname: defaultNickname, volume: 1.0 };
     var currentSettings = { ...initialSettings };
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (menu2) {
         menu2.addEventListener('click', function(event) {
             event.preventDefault();
-            openStatsModal();
+            openrankingModal();
         });
     }
 
@@ -607,19 +607,19 @@ function saveSettings() {
     closeSettingsModal();
 }
 
-function openStatsModal() {
-    var statsModal = document.getElementById('statsModal');
+function openrankingModal() {
+    var rankingModal = document.getElementById('rankingModal');
     var leaderboard = document.getElementById('leaderboard');
 
     populateLeaderboard();
 
-    statsModal.style.display = 'block';
+    rankingModal.style.display = 'block';
     document.body.classList.add('modal-open');
 }
 
-function closeStatsModal() {
-    var statsModal = document.getElementById('statsModal');
-    statsModal.style.display = 'none';
+function closerankingModal() {
+    var rankingModal = document.getElementById('rankingModal');
+    rankingModal.style.display = 'none';
     document.body.classList.remove('modal-open');
 }
 
